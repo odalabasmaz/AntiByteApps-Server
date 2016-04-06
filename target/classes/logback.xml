@@ -1,0 +1,81 @@
+<configuration>
+	<property name="app.name" value="antibyteapps"/>
+	<property name="log.file.name" value="${app.name}.${target.env}"/>
+	<property name="log.file.extension" value="log"/>
+	<property name="log.pattern"
+	          value="%d{yyyy-MM-dd HH:mm:ss.SSS,Europe/Istanbul} [%X{contextPath}] [%thread] [%marker] %-5level %logger{36} %method - %msg%n"/>
+	<property name="archieve.dir.name" value="archieve"/>
+	<property name="log.file.encoding" value="utf-8"/>
+	<timestamp key="timestamp.by.second" datePattern="yyyyMMdd'T'HHmmss"/>
+
+	<!--Possible Values:-->
+	<!--ERROR-->
+	<!--WARN-->
+	<!--INFO-->
+	<!--DEBUG-->
+	<!--TRACE-->
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<charset>${log.file.encoding}</charset>
+			<pattern>${log.pattern}</pattern>
+		</encoder>
+	</appender>
+
+	<!-- Configuration for development environment -->
+	<if condition='property("target.env").equals("dev")'>
+		<then>
+			<property name="log.path" value="C:/logs"/>
+			<appender name="FILE" class="ch.qos.logback.core.FileAppender">
+				<append>false</append>
+				<file>${log.path}/${log.file.name}.${log.file.extension}</file>
+				<encoder>
+					<charset>${log.file.encoding}</charset>
+					<pattern>${log.pattern}</pattern>
+				</encoder>
+			</appender>
+
+			<root level="INFO">
+				<appender-ref ref="STDOUT"/>
+				<appender-ref ref="FILE"/>
+			</root>
+		</then>
+	</if>
+
+	<if condition='!property("target.env").contains("dev")'>
+		<then>
+			<property name="log.path" value="C:/logs"/>
+			<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+				<append>true</append>
+				<evaluator class="ch.qos.logback.classic.boolex.OnMarkerEvaluator">
+					<!-- add PROCESS_INT marker to the logs whenever possible-->
+					<marker>PROCESS_INT</marker>
+				</evaluator>
+				<file>${log.path}/${log.file.name}.${log.file.extension}</file>
+				<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+					<!-- daily rollover -->
+					<fileNamePattern>
+						${log.path}/${archieve.dir.name}/${log.file.name}.%d{yyyy-MM-dd}.%i.${log.file.extension}
+					</fileNamePattern>
+
+					<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+						<!-- or whenever the file size reaches 10MB -->
+						<maxFileSize>10MB</maxFileSize>
+					</timeBasedFileNamingAndTriggeringPolicy>
+					<!-- keep 30 days' worth of history -->
+					<maxHistory>30</maxHistory>
+				</rollingPolicy>
+
+				<encoder>
+					<pattern>${log.pattern}</pattern>
+				</encoder>
+			</appender>
+
+			<root>
+				<appender-ref ref="STDOUT"/>
+				<appender-ref ref="FILE"/>
+			</root>
+		</then>
+	</if>
+
+</configuration>
