@@ -1,102 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d511a0bf-06ca-4149-b0af-5fe59a26314d" name="Default" comment="AntiByteApps-Server init">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT.war" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/classes/com/antibyteapps/dictionary/common/DictionaryConstants.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/classes/com/antibyteapps/dictionary/dao/Node.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/classes/com/antibyteapps/dictionary/dao/WordDB.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/classes/com/antibyteapps/dictionary/domain/WordWrapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/classes/com/antibyteapps/dictionary/service/DictionaryReader.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/classes/com/antibyteapps/dictionary/service/DictionaryService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/classes/com/antibyteapps/services/DictionaryWS.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/classes/com/antibyteapps/services/HelloWorldService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/lib/aopalliance-repackaged-2.4.0-b34.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/lib/commons-compiler-2.6.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/lib/hamcrest-core-1.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/lib/hk2-api-2.4.0-b34.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/lib/hk2-locator-2.4.0-b34.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/lib/hk2-utils-2.4.0-b34.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/lib/janino-2.6.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/lib/javassist-3.18.1-GA.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/lib/javax.annotation-api-1.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/lib/javax.inject-2.4.0-b34.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/lib/javax.ws.rs-api-2.0.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/lib/jersey-client-2.22.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/lib/jersey-common-2.22.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/lib/jersey-container-servlet-2.22.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/lib/jersey-container-servlet-core-2.22.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/lib/jersey-guava-2.22.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/lib/jersey-media-jaxb-2.22.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/lib/jersey-server-2.22.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/lib/junit-4.12.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/lib/logback-classic-1.1.7.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/lib/logback-core-1.1.7.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/lib/osgi-resource-locator-1.0.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.21.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/lib/validation-api-1.1.0.Final.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/antibyteapps/dictionary/common/DictionaryConstants.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/antibyteapps/dictionary/dao/Node.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/antibyteapps/dictionary/dao/WordDB.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/antibyteapps/dictionary/domain/WordWrapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/antibyteapps/dictionary/service/DictionaryReader.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/antibyteapps/dictionary/service/DictionaryService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/antibyteapps/services/DictionaryWS.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/antibyteapps/services/HelloWorldService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/com/antibyteapps/services/ClientService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/com/antibyteapps/services/TestWords.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/AntiByteApps_Server_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/AntiByteApps_Server_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/findbugs-idea.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_janino_commons_compiler_2_6_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_janino_janino_2_6_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_aopalliance_repackaged_2_4_0_b34.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_javax_inject_2_4_0_b34.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_api_2_4_0_b34.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_locator_2_4_0_b34.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_utils_2_4_0_b34.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_osgi_resource_locator_1_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_bundles_repackaged_jersey_guava_2_22_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_2_22_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_core_2_22_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_client_2_22_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_common_2_22_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_server_2_22_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_media_jersey_media_jaxb_2_22_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_21.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Tomcat__DEV_.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Tomcat__PROD_.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AntiByteApps-Server.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/classes/dictionary/words.out" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/classes/logback.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/view/error404.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/AntiByteApps-Server-1.0-SNAPSHOT/view/index.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/dictionary/words.out" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/logback.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.antibyteapps.services.TestWords.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/com.antibyteapps.services.TestWords.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/dictionary/words2.out" />
+    <list default="true" id="d511a0bf-06ca-4149-b0af-5fe59a26314d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AntiByteApps-Server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -652,7 +558,7 @@
       <workItem from="1459950805523" duration="1964000" />
       <workItem from="1459953235775" duration="1027000" />
       <workItem from="1459954479874" duration="778000" />
-      <workItem from="1459955287125" duration="730000" />
+      <workItem from="1459955287125" duration="769000" />
     </task>
     <task id="LOCAL-00001" summary="AntiByteApps-Server init">
       <created>1459953509801</created>
@@ -661,7 +567,14 @@
       <option name="project" value="LOCAL" />
       <updated>1459953509801</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="AntiByteApps-Server .gitignore">
+      <created>1459956035542</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1459956035542</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -676,7 +589,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6307000" />
+    <option name="totallyTimeSpent" value="6346000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1034" extended-state="6" />
@@ -691,7 +604,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1684435" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -728,7 +641,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="AntiByteApps-Server init" />
-    <option name="LAST_COMMIT_MESSAGE" value="AntiByteApps-Server init" />
+    <MESSAGE value="AntiByteApps-Server .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="AntiByteApps-Server .gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
