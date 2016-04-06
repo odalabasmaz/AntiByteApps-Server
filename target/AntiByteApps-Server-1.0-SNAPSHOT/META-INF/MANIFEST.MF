@@ -1,7 +1,0 @@
-Manifest-Version: 1.0
-Build-Date: 2016-04-06T12:53:02Z
-Built-By: odalabasmaz
-App-Info: Anti-Byte Apps Services
-Created-By: IntelliJ IDEA
-Build-Jdk: 1.8.0_60
-

@@ -1,8 +1,0 @@
-com\antibyteapps\dictionary\common\DictionaryConstants.class
-com\antibyteapps\dictionary\service\DictionaryReader.class
-com\antibyteapps\dictionary\dao\WordDB.class
-com\antibyteapps\services\HelloWorldService.class
-com\antibyteapps\dictionary\domain\WordWrapper.class
-com\antibyteapps\dictionary\dao\Node.class
-com\antibyteapps\dictionary\service\DictionaryService.class
-com\antibyteapps\services\DictionaryWS.class

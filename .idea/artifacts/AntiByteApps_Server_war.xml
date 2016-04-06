@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="AntiByteApps-Server:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="AntiByteApps-Server-1.0-SNAPSHOT.war">
-      <element id="artifact" artifact-name="AntiByteApps-Server:war exploded" />
-    </root>
-  </artifact>
-</component>
