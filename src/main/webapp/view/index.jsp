@@ -8,6 +8,6 @@
 
 <p>Server is running properly..</p>
 
-<p>Copyright 2016</p>
+<p>Copyright ©2016</p>
 </body>
 </html>
