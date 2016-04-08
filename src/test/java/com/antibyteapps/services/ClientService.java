@@ -1,7 +1,6 @@
 package com.antibyteapps.services;
 
 import org.glassfish.jersey.client.ClientConfig;
-import org.junit.Test;
 
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
@@ -15,9 +14,11 @@ import java.net.URI;
  * @author Orhun Dalabasmaz
  */
 public class ClientService {
-	private static final String ENDPOINT = "http://wrkodalabasmaz:8080/AntiByteApps";
+	private static final String ENDPOINT_LOCAL = "http://localhost:8080/AntiByteApps";
+	private static final String ENDPOINT_REMOTE = "http://antibyteapps.orhundalabasmaz.com";
 	private static final String SERVICES = "services";
 	private static final String SERVICE_PATH = "dictionary";
+	private static final String ENDPOINT = ENDPOINT_REMOTE;
 
 	private static ClientService service;
 	private static WebTarget target;

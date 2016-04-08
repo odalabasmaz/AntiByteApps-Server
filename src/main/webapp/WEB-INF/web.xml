@@ -18,9 +18,19 @@
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 
+	<servlet>
+		<servlet-name>dictionary</servlet-name>
+		<jsp-file>/view/dictionary.jsp</jsp-file>
+	</servlet>
+
 	<servlet-mapping>
 		<servlet-name>jersey-servlet</servlet-name>
 		<url-pattern>/services/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>dictionary</servlet-name>
+		<url-pattern>/dictionary</url-pattern>
 	</servlet-mapping>
 
 	<welcome-file-list>

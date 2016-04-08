@@ -24,7 +24,11 @@ public class DictionaryWS {
 	@Produces(MediaType.TEXT_PLAIN)
 	public Response getResponse() {
 		String response = "You should give me a word to check!";
-		return Response.status(200).entity(response).encoding(DictionaryConstants.CHARSET).build();
+		return Response
+				.status(200)
+				.entity(response)
+				.encoding(DictionaryConstants.CHARSET)
+				.build();
 	}
 
 	@GET
@@ -32,9 +36,15 @@ public class DictionaryWS {
 	@Produces(MediaType.TEXT_PLAIN)
 	public Response getResponse(@PathParam("word") String word) {
 		boolean isWord = DICTIONARY.isWord(word);
-		LOGGER.info("Checking for word: {}, isWord: {}", word, isWord);
+		LOGGER.info("Checking for word: \"{}\", isWord: {}", word, isWord);
 		String response = word + " is " + (isWord ? "" : "not ") + "a word!";
-		return Response.status(200).entity(response).encoding(DictionaryConstants.CHARSET).build();
+		return Response
+				.status(200)
+				.entity(response)
+				.encoding(DictionaryConstants.CHARSET)
+				.header("Access-Control-Allow-Origin", "*")
+				.header("Access-Control-Allow-Methods", "GET")
+				.build();
 	}
 
 }
