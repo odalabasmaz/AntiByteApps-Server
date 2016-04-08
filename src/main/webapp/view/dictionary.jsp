@@ -3,8 +3,8 @@
 <head>
     <meta name="generator" content="HTML Tidy for Windows (vers 14 February 2006), see www.w3.org"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <script src="js/angular.min.js" type="text/javascript"></script>
-    <script src="js/app.js" type="text/javascript"></script>
+    <script src="../js/angular.min.js" type="text/javascript"></script>
+    <script src="../js/app.js" type="text/javascript"></script>
     <title>Anti-Byte Apps</title>
 </head>
 
