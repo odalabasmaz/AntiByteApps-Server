@@ -7,5 +7,7 @@
 <h2>Anti-Byte Apps</h2>
 
 <p>Server is running properly..</p>
+
+<p>Copyright 2016</p>
 </body>
 </html>
