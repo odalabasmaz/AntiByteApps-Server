@@ -6,6 +6,6 @@
 <body>
 <h2>Anti-Byte Apps</h2>
 
-<p>Server is running properly..</p>
+<p>404 - Page not found!</p>
 </body>
 </html>

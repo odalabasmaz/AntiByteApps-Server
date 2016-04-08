@@ -10,15 +10,6 @@
 	<packaging>war</packaging>
 	<description>Anti-Byte Apps Services</description>
 
-	<!--<repositories>
-		<repository>
-			<id>maven2-repository.java.net</id>
-			<name>Java.net Repository for Maven</name>
-			<url>http://download.java.net/maven/2/</url>
-			<layout>default</layout>
-		</repository>
-	</repositories>
--->
 	<properties>
 		<java.version>1.8</java.version>
 		<jersey2.version>2.22.2</jersey2.version>
@@ -62,6 +53,7 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>${junit.version}</version>
+			<scope>test</scope>
 		</dependency>
 
 		<!-- LOGGING -->
@@ -90,7 +82,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>AntiByteApps-Server-v${project.version}</finalName>
+		<finalName>${project.artifactId}-v${project.version}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -106,6 +98,8 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>${maven-war-plugin.version}</version>
 				<configuration>
+					<!--<failOnMissingWebXml>true</failOnMissingWebXml>-->
+					<!--<webappDirectory>${project.build.directory}/${project.artifactId}</webappDirectory>-->
 					<archive>
 						<manifestEntries>
 							<Build-Date>${maven.build.timestamp}</Build-Date>
