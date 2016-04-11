@@ -1,10 +1,12 @@
 package com.antibyteapps.services;
 
 import com.antibyteapps.dictionary.service.DictionaryService;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 
 /**
  * @author Orhun Dalabasmaz
@@ -13,16 +15,21 @@ public class TestWords {
 	private static DictionaryService DICTIONARY;
 	private static ClientService CLIENT;
 
-	private void initDictionary() {
+	private static void initDictionary() {
 		if (DICTIONARY == null) {
 			DICTIONARY = DictionaryService.getInstance();
 		}
 	}
 
-	private void initClientService() {
+	private static void initClientService() {
 		if (CLIENT == null) {
 			CLIENT = ClientService.getInstance();
 		}
+	}
+
+	@BeforeClass
+	public static void init() {
+		initClientService();
 	}
 
 	@Test
@@ -39,16 +46,14 @@ public class TestWords {
 
 	@Test
 	public void testWordsViaServices() {
-		initClientService();
-		assertTrue(CLIENT.plainRequest().equals("You should give me a word to check!"));
-		assertTrue(CLIENT.plainRequest("aba").equals("true"));
-		assertTrue(CLIENT.plainRequest("abaş").equals("false"));
-		assertTrue(CLIENT.plainRequest("abay").equals("false"));
-		assertTrue(CLIENT.plainRequest("abayı").equals("false"));
-		assertTrue(CLIENT.plainRequest("abar").equals("false"));
-		assertTrue(CLIENT.plainRequest("abart").equals("false"));
-		assertTrue(CLIENT.plainRequest("abartı").equals("true"));
-		assertTrue(CLIENT.plainRequest("kalemi").equals("false"));
-		assertTrue(CLIENT.plainRequest("atkı").equals("true"));
+		assertTrue(CLIENT.isWord("aba"));
+		assertFalse(CLIENT.isWord("abaş"));
+		assertFalse(CLIENT.isWord("abay"));
+		assertFalse(CLIENT.isWord("abayı"));
+		assertFalse(CLIENT.isWord("abar"));
+		assertFalse(CLIENT.isWord("abart"));
+		assertTrue(CLIENT.isWord("abartı"));
+		assertFalse(CLIENT.isWord("kalemi"));
+		assertTrue(CLIENT.isWord("atkı"));
 	}
 }

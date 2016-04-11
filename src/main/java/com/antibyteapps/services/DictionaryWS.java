@@ -28,6 +28,8 @@ public class DictionaryWS {
 				.status(200)
 				.entity(response)
 				.encoding(DictionaryConstants.CHARSET)
+				.header("Access-Control-Allow-Origin", "*")
+				.header("Access-Control-Allow-Methods", "GET")
 				.build();
 	}
 
@@ -37,7 +39,6 @@ public class DictionaryWS {
 	public Response getResponse(@PathParam("word") String word) {
 		boolean isWord = DICTIONARY.isWord(word);
 		LOGGER.info("Checking for word: \"{}\", isWord: {}", word, isWord);
-//		String response = word + " is " + (isWord ? "" : "not ") + "a word!";
 		String response = String.valueOf(isWord);
 		return Response
 				.status(200)

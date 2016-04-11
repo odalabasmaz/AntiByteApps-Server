@@ -14,11 +14,11 @@ import java.net.URI;
  * @author Orhun Dalabasmaz
  */
 public class ClientService {
-	private static final String ENDPOINT_LOCAL = "http://localhost:8080/AntiByteApps";
+	private static final String ENDPOINT_LOCAL = "http://localhost:8080";
 	private static final String ENDPOINT_REMOTE = "http://antibyteapps.orhundalabasmaz.com";
+	private static final String ENDPOINT = ENDPOINT_REMOTE;
 	private static final String SERVICES = "services";
 	private static final String SERVICE_PATH = "dictionary";
-	private static final String ENDPOINT = ENDPOINT_REMOTE;
 
 	private static ClientService service;
 	private static WebTarget target;
@@ -67,11 +67,15 @@ public class ClientService {
 		return UriBuilder.fromUri(ENDPOINT).build();
 	}
 
-	public String plainRequest() {
+	private String plainRequest() {
 		return target.path(SERVICES).path(SERVICE_PATH).request().accept(MediaType.TEXT_PLAIN).get(String.class);
 	}
 
-	public String plainRequest(String param) {
+	private String plainRequest(String param) {
 		return target.path(SERVICES).path(SERVICE_PATH).path(param).request().accept(MediaType.TEXT_PLAIN).get(String.class);
+	}
+
+	public boolean isWord(String word) {
+		return "true".equals(plainRequest(word));
 	}
 }
